@@ -76,7 +76,7 @@
 - **why:** Extends behaviour, usefull when working with events.
 
 # Generators
-- Generators are function that specifies what value i syielded next time.
+- Generators are function that specifies what value is yielded next time.
 - eg: **function* abc(){}** 
 - function* abc(){ yield 'a'; yield 'b'}; abc().next().value // a  , abc().next().value // b
 
