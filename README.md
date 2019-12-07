@@ -47,7 +47,8 @@
 - Async operations are generally completed by callbacks. (AJAX)
 
 # Promises
-- A promise is an object that wraps an asynchronous operation and notifies when it's done.
+- A promise is an object that wraps an asynchronous operation and notifies when it's done. 
+- It is an alternative of **callback** but provides more features like method-chaining & error-handling.
 - use to handle the large set asynchronous result of an operation.
 - three states of promise are pending, fullfilled, rejected. 
 - resolved by built-in states/methods
