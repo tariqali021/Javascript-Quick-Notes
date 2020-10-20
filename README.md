@@ -10,6 +10,16 @@
 - ES5 it was possible by setting object properties like writable, configurable to false.
 - ES6 it is poosible by keyword **const**
 
+# Template string/literals
+- used for string concatenation by wrapping variables by curly braces & tild operator. eg: `${firstname} ${lastname`
+- also allow us to insert variables into the string like in the above example.
+- used for multiple lines with keeping whitespaces.
+
+# Function declaration & Function expression
+- Both are used to write a function with the *function* keyword.
+- Funcion declaration is as simple as writting a function & FUnction expression is assigning a function without a name to varibale/constant.
+- Function declarations ar hoisted while Function expression not, means you can call function declarations before writting a function while not function expressions.
+
 # Arrow functions
 - is like a regular function but syntax is short. Eg: var double = num => num * 2
 - with an arrow function, the **this** binding keeps its original binding from the context. closure function does not override **this** behaviour.
