@@ -3,6 +3,7 @@
 
 - a scripting/programming language or a tool to addinteractivity into the websites dynamically.
 - It's actually a client-side scripting language but also "JS runtime is a popular tool to power web servers."
+-  it’s synchronous and single-threaded so only one code execution process can happen at any one time.
 - Popular frontend JS framewroks are ReactJS, AngularJS & backend is Node.JS
 
 # Constants
@@ -56,6 +57,14 @@
 - Sync operations block execution untill complete while Async can execute without blocking other operations (javascript)
 - Async operations are generally completed by callbacks. (AJAX)
 
+# Callback
+- A callback is a way to make asynchronous operations more synchronous (sequential order).
+- A callback is a function that executes after another function has executed.
+- When a function simply accepts another function as an argument, this contained function is known as a callback function.
+- users avoid this because of nested callbacks (Callback Hell)
+- eg: setTimeout, setInterval 
+- **why:** useful for event-listeners & API calls & for short asynchronous operations
+
 # Promises
 - A promise is an object that wraps an asynchronous operation and notifies when it's done. 
 - It is an alternative of **callback** but provides more features like method-chaining & error-handling.
@@ -64,16 +73,11 @@
 - resolved by built-in states/methods
 - No callback required
 
-# Callback
-- A callback is a function that executes after another function has executed.
-- When a function simply accepts another function as an argument, this contained function is known as a callback function.
-- A callback is a way to make asynchronous operations more synchronous (sequential order).
-- eg: setTimeout, setInterval 
-- **why:** useful for event-listeners & API calls & for short asynchronous operations
-
 # Async & Await
 - concept that defines **Stop and wait until something is resolved.**
+- It is an alternative of **Promises**
 - It provides a way to maintain asynchronous processing in a more synchronous fashion. 
+- It allow us to write Promise-based code as if it were synchronous, but without blocking the main thread.
 - **async** operation returns a promise. The promise will be resolved by one of it's state.
 - **await** is only used in an async function to ensure that all promises returned in the async function are synchronized
 - **why:** Synchronous capabilities, controls the behaviour & Reduces “callback hell”
