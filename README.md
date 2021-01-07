@@ -99,3 +99,32 @@
 - Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
 - this means that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.
 - this means if varibale is used first but declared later, initialization will be available to variable.
+
+# call vs apply vs bind
+**call**
+- The call method calls a function with provided object(this) value and individual arguments.
+- It provides a new value of this to function/method, you can write a method once and then inherit it in another object, without having to rewrite the method for the new object.
+- If the first argument is not passed, the value of this is bound to the global object. (first argument is always an object).
+  - **Caution:** In strict mode, the value of this will be undefined. See below.
+ 
+ ```javascript
+ // Inheritance example
+ 
+ function Product(name, price) {
+  this.name = name;
+  this.price = price;
+}
+
+function Food(name, price) {
+  Product.call(this, name, price);
+  this.category = 'food';
+}
+
+function Toy(name, price) {
+  Product.call(this, name, price);
+  this.category = 'toy';
+}
+
+const cheese = new Food('feta', 5);
+const fun = new Toy('robot', 40);
+ ```
