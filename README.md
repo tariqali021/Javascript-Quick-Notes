@@ -108,8 +108,8 @@
 - **Array Deep Copy** : A Deep copy of an object is a copy whose properties do not share the same references from the source object from which the copy was made.
 - **Null vs Undefined** : Undefined means a variable has been declared but has yet not been assigned a value **&&** Null is an assignment value. It can be assigned to a variable as a representation of no value. 
 - **Truthy vs Falsy** : a truthy value is a value that is considered true when encountered in a Boolean context **&&** A falsy (sometimes written falsey) value is a value that is considered false when encountered in a Boolean context.
-Truthy -> if (true), if ({}), if ([]), if (42), if ("0"), if ("false"), if (new Date()), if (-42), if (12n), if (3.14), if (-3.14), if (Infinity), if (-Infinity)
-Falsy -> if (false), if (null) , if (undefined) , if (0), if (-0), if (0n), if (NaN), if ("")
+  - Truthy -> if (true), if ({}), if ([]), if (42), if ("0"), if ("false"), if (new Date()), if (-42), if (12n), if (3.14), if (-3.14), if (Infinity), if (-Infinity)
+  - Falsy -> if (false), if (null) , if (undefined) , if (0), if (-0), if (0n), if (NaN), if ("")
 
 # call vs apply vs bind
 **call**
