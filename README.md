@@ -126,14 +126,6 @@ With the help of generators, one can control an asynchronous call outside the co
   - **Throttling** limits the number of times a function can be executed in a given period, ensuring it runs at regular intervals
   - e.g., during scroll or window resizing
 
-# Other JS Basic Concepts
-- **Array Shallow Copy** : A shallow copy of an object is a copy whose properties share the same references from the source object from which the copy was made.
-- **Array Deep Copy** : A Deep copy of an object is a copy whose properties do not share the same references from the source object from which the copy was made.
-- **Null vs Undefined** : Undefined means a variable has been declared but has yet not been assigned a value **&&** Null is an assignment value. It can be assigned to a variable as a representation of no value. 
-- **Truthy vs Falsy** : a truthy value is a value that is considered true when encountered in a Boolean context **&&** A falsy (sometimes written falsey) value is a value that is considered false when encountered in a Boolean context.
-  - Truthy -> if (true), if ({}), if ([]), if (42), if ("0"), if ("false"), if (new Date()), if (-42), if (12n), if (3.14), if (-3.14), if (Infinity), if (-Infinity)
-  - Falsy -> if (false), if (null) , if (undefined) , if (0), if (-0), if (0n), if (NaN), if ("")
-
 # Higher Order Function
 - A higher-order function in JavaScript is a function that either takes one or more functions as arguments, or returns a function as its result. These functions allow for more abstract and reusable code, enabling functional programming patterns
 - For example, map() and filter() are higher-order functions because they take callback functions as arguments.
@@ -174,3 +166,12 @@ function Toy(name, price) {
 const cheese = new Food('feta', 5);
 const fun = new Toy('robot', 40);
  ```
+
+# Other JS Basic Concepts
+- **Array Shallow Copy** : A shallow copy of an object is a copy whose properties share the same references from the source object from which the copy was made.
+- **Array Deep Copy** : A Deep copy of an object is a copy whose properties do not share the same references from the source object from which the copy was made.
+- **Null vs Undefined** : Undefined means a variable has been declared but has yet not been assigned a value **&&** Null is an assignment value. It can be assigned to a variable as a representation of no value. 
+- **Truthy vs Falsy** : a truthy value is a value that is considered true when encountered in a Boolean context **&&** A falsy (sometimes written falsey) value is a value that is considered false when encountered in a Boolean context.
+  - Truthy -> if (true), if ({}), if ([]), if (42), if ("0"), if ("false"), if (new Date()), if (-42), if (12n), if (3.14), if (-3.14), if (Infinity), if (-Infinity)
+  - Falsy -> if (false), if (null) , if (undefined) , if (0), if (-0), if (0n), if (NaN), if ("")
+
